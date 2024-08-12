@@ -32,7 +32,7 @@ class nanoStats:
                 collection['active_difficulty']['network_receive_minimum'],
                 16))
         self.BlockCount = collection['block_count']
-        self.ConfirmationHistory = collection['confirmation_history']
+        # self.ConfirmationHistory = collection['confirmation_history']
         self.Peers = collection['peers']
         self.StatsCounters = collection['stats_counters']
         self.StatsObjects = collection['stats_objects']['node']
@@ -73,7 +73,7 @@ class nanoRPC:
             "peers": Peers,
             "stats_counters": StatsCounters,
             "stats_objects": StatsObjects,
-            "confirmation_history": ConfirmationHistory,
+            # "confirmation_history": ConfirmationHistory, # TODO: this is a slow rpc call
             "uptime": Uptime,
             "active_difficulty": ActiveDifficulty,
             "frontier_count": Frontiers,
